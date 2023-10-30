@@ -9,7 +9,7 @@ Skorzytałeś właśnie z szablonu aplikacji T3 i jesteś gotowy, aby zacząć z
 
 ## Baza Danych
 
-Jeżeli twoja aplikacja zawiera Prismę, koniecznie uruchom `npx prisma db push` z głównego folderu projektu. Komenda ta zsynchronizuje twój schemat Prismy z bazą danych i wygeneruje typy TypeScripta dla "Prisma Client" bazując na tym schemacie. Uwaga: po wygenerowaniu typów Prismy prawdopodobnie będziesz musiał zrestartować serwer TypeScripta, aby był on w stanie je wykryć.
+Jeżeli twoja aplikacja zawiera Prismę, koniecznie uruchom `npx prisma db push` z głównego folderu projektu. Komenda ta zsynchronizuje twój schemat Prismy z bazą danych i wygeneruje typy TypeScripta dla "Prisma Client" bazując na tym schemacie. Uwaga: po wygenerowaniu typów Prismy prawdopodobnie będziesz musiał [zrestartować serwer TypeScripta](https://tinytip.co/tips/vscode-restart-ts/), aby był on w stanie je wykryć.
 
 ## Uwierzytelnianie
 
@@ -31,8 +31,16 @@ Oczywiście, jeżeli wolisz korzystać z innego, możesz użyć jednego z [wielu
 
 Powinieneś być w stanie się zalogować.
 
+## Konfiguracja Edytora
+
+Następujące rozszerzenia są przez nas polecane dla optymalnego DX'u. Poniższe linki dostarczają pluginy dla odpowiednich edytorów.
+
+- [Prisma Extension](https://www.prisma.io/docs/guides/development-environment/editor-setup)
+- [Tailwind CSS IntelliSense Extension](https://tailwindcss.com/docs/editor-setup)
+- [Prettier Extension](https://prettier.io/docs/en/editors.html)
+
 ## Następne Kroki
 
-- Jeżeli twoja aplikacja zawiera tRPC, sprawdź pliki `src/pages/index.tsx` i `src/server/api/routers/example.ts` aby dowiedzieć się, jak działają zapytania wykonywane przez tRPC.
+- Jeżeli twoja aplikacja zawiera tRPC, sprawdź pliki `src/pages/index.tsx` i `src/server/api/routers/post.ts` aby dowiedzieć się, jak działają zapytania wykonywane przez tRPC.
 - Rozejrzyj się po dokumentacji Create T3 App oraz dokumentacji paczek, z których korzysta twój projekt.
 - Dołącz do naszego serwera [Discord](https://t3.gg/discord) i dodaj gwiazdkę na repozytorium [GitHub](https://github.com/t3-oss/create-t3-app)! :)

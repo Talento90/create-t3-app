@@ -18,6 +18,11 @@ Jeżeli nie znasz poszczególnych technologi użytych w projekcie, skorzystaj z 
 - [Prisma](https://prisma.io)
 - [Tailwind CSS](https://tailwindcss.com)
 - [tRPC](https://trpc.io)
+- [Drizzle](https://orm.drizzle.team/docs/overview)
+
+## Jak sprawić, by aplikacja była ciągle aktualna?
+
+Create T3 App to narzędzie do tworzenia szablonu, a nie framework. Oznacza to, że po inicjalizacji aplikacji jest ona już twoja. Nie istnieje żadne narzędzie CLI do wykorzystania po instalacji aplikacji, które utrzymałoby twoją aplikację aktualną. Jeżeli chcesz być na bieżąco z wprowadzanymi przez nas zmianami do szablonu, możesz [włączyć powiadomienia nowych wersji](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications#configuring-your-watch-settings-for-an-individual-repository) dla naszego repozytorium. Pamiętaj jednak, że wprowadzanie każdej zmiany z naszego szablonu nie jest wcale wymagane.
 
 ## Jakie zasoby do nauki są dostępne?
 
@@ -36,6 +41,8 @@ Zdajemy sobie sprawę z tego, iż opisany wyżej sposób nie jest dla każdego n
 
 ### Filmy
 
+- [T3 Stack Tutorial - FROM 0 TO PROD FOR $0 (Next.js, tRPC, TypeScript, Tailwind, Prisma & More)](https://www.youtube.com/watch?v=YkOSUVzOAA4) **(recommended)**
+- [Jack Herrington - Zbuduj aplikację do sporządzania notatek z T3 Stackiem](https://www.youtube.com/watch?v=J1gzN1SAhyM)
 - [Zbuduj klon Twittera z T3 Stackiem - tRPC, Next.js, Prisma, Tailwind oraz Zod](https://www.youtube.com/watch?v=nzJsYJPCc80)
 - [Zbuduj blog z T3 Stackiem - tRPC, TypeScript, Next.js, Prisma i Zod](https://www.youtube.com/watch?v=syEWlxVFUrY)
 - [Zbuduj live chat z T3 Stackiem - TypeScript, Tailwind, tRPC](https://www.youtube.com/watch?v=dXRRY37MPuk)
@@ -46,7 +53,7 @@ Zdajemy sobie sprawę z tego, iż opisany wyżej sposób nie jest dla każdego n
 
 Tak jak opisano w [aksjomacie #3](/pl/introduction#typesafety-nie-jest-opcjonalne), traktujemy typesafety za pierwszorzędną rzecz. Niestety nie wszystkie frameworki i pluginy posiadają wsparcie do TypeScripta, dlatego też niektóre pliki konfiguracyjne muszą mieć powyższe rozszerzenie.
 
-Staramy się podkreślić, iż pliki te korzystają z TypeScripta nie bez powodu. Wyraźnie określamy rozszerzenia plików jako `cjs` lub `mjs`, zależnie od wsparcia przez daną bibliotekę. Dodatkowo, wszystkie pliki `.js` w naszym projekcie są w dalszym ciągu sprawdzane pod kątem poprawności typów - korzystamy do tego z komentarza `@ts-check` na górze pików.
+Staramy się podkreślić, iż pliki te korzystają z TypeScripta nie bez powodu. Wyraźnie określamy rozszerzenia plików jako `cjs` lub `mjs`, zależnie od wsparcia przez daną bibliotekę. Dodatkowo, wszystkie pliki `.js` w naszym projekcie są w dalszym ciągu sprawdzane pod kątem poprawności typów - korzystamy do tego opcji `checkJs` w kompilatorze (tsconfig).
 
 ## Mam problem z dodaniem i18n do aplikacji. Czy istnieje jakiś projekt, do którego mógłbym się odnieść przy jej budowaniu?
 

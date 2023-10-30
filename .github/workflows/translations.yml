@@ -37,12 +37,13 @@ jobs:
 
             const CODEOWNERS = {
               ar: ["a4addel", "Sboonny"],
-              fr: ["Defranos", "joachimjusth"],
+              fr: ["Defranos", "joachimjusth", "vdeva"],
+              ja: ["t6adev", "uehaj"],
               no: ["estubmo", "josephayman"],
               pl: ["matibox", "Infiplaya", "PiotrekPKP"],
               pt: ["minsk-dev", "Sn0wye", "victoriaquasar", "MattFerreira18", "gilhrpenner"],
               ru: ["AmadeusTwi", "ronanru", "JohnBakhmat"],
-              "zh-hans": ["fernandoxu", "lodisy"],
+              "zh-hans": ["fernandoxu", "escwxyz"],
             };
 
             console.log("Changed languages:", changedLanguages)
